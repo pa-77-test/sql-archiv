@@ -14,7 +14,7 @@ CREATE PROCEDURE [finAnalytics].[addCashIn]
 AS
 BEGIN
 	
-	declare @new_name NVARCHAR(255) = OBJECT_NAME(@@PROCID)
+	declare @sp_name NVARCHAR(255) = OBJECT_NAME(@@PROCID)
 	--старт лог
 	drop table if exists #mainPrc
 	create table #mainPrc (sp_name nvarchar(255))
