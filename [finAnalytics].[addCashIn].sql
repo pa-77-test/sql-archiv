@@ -13,7 +13,7 @@ CREATE PROCEDURE [finAnalytics].[addCashIn]
 
 AS
 BEGIN
-	
+	/*test*/
 	declare @sp_name NVARCHAR(255) = OBJECT_NAME(@@PROCID)
 	--старт лог
 	drop table if exists #mainPrc
